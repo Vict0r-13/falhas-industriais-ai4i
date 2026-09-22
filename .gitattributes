@@ -1,0 +1,3 @@
+* text=auto
+data/raw/ai4i2020.csv -text
+*.png binary
