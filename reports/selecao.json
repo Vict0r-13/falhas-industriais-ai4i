@@ -1,0 +1,20 @@
+{
+  "modelo": "floresta_aleatoria",
+  "limiar": 0.29000000000000004,
+  "criterio_modelo": "maior AP na validacao",
+  "custo_fn": 10,
+  "custo_fp": 1,
+  "seed": 42,
+  "features": [
+    "Type",
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]"
+  ],
+  "refit": false,
+  "n_treino": 6000,
+  "n_validacao": 2000,
+  "n_teste": 2000
+}

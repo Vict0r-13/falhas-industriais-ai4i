@@ -1,0 +1,8 @@
+{
+  "registros": 10000,
+  "falhas": 339,
+  "taxa_falha": 0.0339,
+  "ausencias": 0,
+  "entradas_duplicadas": 0,
+  "divergencias_alvo_modos": 27
+}

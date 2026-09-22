@@ -1,0 +1,3 @@
+﻿Type,Air temperature [K],Process temperature [K],Rotational speed [rpm],Torque [Nm],Tool wear [min],score_falha,alerta
+M,298.1,308.6,1551,42.8,0,0.007463058120366511,0
+L,300.0,310.0,1400,60.0,220,0.7820667387035358,1

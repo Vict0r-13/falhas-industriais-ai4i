@@ -1,0 +1,45 @@
+{
+  "modelo": "floresta_aleatoria",
+  "selecionado": {
+    "limiar": 0.29000000000000004,
+    "n": 2000,
+    "falhas": 68,
+    "average_precision": 0.6407034928778461,
+    "roc_auc": 0.9649631591767142,
+    "precisao": 0.45081967213114754,
+    "recall": 0.8088235294117647,
+    "f2": 0.6979695431472082,
+    "acuracia": 0.96,
+    "tn": 1865,
+    "fp": 67,
+    "fn": 13,
+    "tp": 55,
+    "alertas": 122,
+    "custo_relativo": 197,
+    "recall_ic95": [
+      0.699893585399794,
+      0.8847270596907507
+    ],
+    "precisao_ic95": [
+      0.3653729023880311,
+      0.5392690167977734
+    ]
+  },
+  "baseline": {
+    "limiar": 0.5,
+    "n": 2000,
+    "falhas": 68,
+    "average_precision": 0.034,
+    "roc_auc": 0.5,
+    "precisao": 0.0,
+    "recall": 0.0,
+    "f2": 0.0,
+    "acuracia": 0.966,
+    "tn": 1932,
+    "fp": 0,
+    "fn": 68,
+    "tp": 0,
+    "alertas": 0,
+    "custo_relativo": 680
+  }
+}

@@ -1,0 +1,4 @@
+﻿modelo,conjunto,limiar,n,falhas,average_precision,roc_auc,precisao,recall,f2,acuracia,tn,fp,fn,tp,alertas,custo_relativo
+floresta_aleatoria,validacao,0.5,2000,68,0.5479966235,0.9646510778,0.5833333333,0.6176470588,0.6104651163,0.972,1902,30,26,42,72,290
+regressao_logistica,validacao,0.5,2000,68,0.3680167924,0.8788210937,0.1424936387,0.8235294118,0.4210526316,0.8255,1595,337,12,56,393,457
+baseline,validacao,0.5,2000,68,0.034,0.5,0,0,0,0.966,1932,0,68,0,0,680
