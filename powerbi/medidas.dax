@@ -1,0 +1,30 @@
+// Criar cada medida separadamente. Tabela Observacoes:
+Observações = COUNTROWS(Observacoes)
+
+Falhas observadas = SUM(Observacoes[falha_real])
+
+Taxa de falha = DIVIDE([Falhas observadas], [Observações])
+
+// Tabela Predicoes. As medidas respeitam os filtros dessa tabela.
+Observações avaliadas = COUNTROWS(Predicoes)
+
+Falhas no teste = SUM(Predicoes[falha_real])
+
+Alertas = SUM(Predicoes[alerta])
+
+TP = COALESCE(CALCULATE(COUNTROWS(Predicoes), KEEPFILTERS(Predicoes[resultado] = "TP")), 0)
+
+FP = COALESCE(CALCULATE(COUNTROWS(Predicoes), KEEPFILTERS(Predicoes[resultado] = "FP")), 0)
+
+FN = COALESCE(CALCULATE(COUNTROWS(Predicoes), KEEPFILTERS(Predicoes[resultado] = "FN")), 0)
+
+TN = COALESCE(CALCULATE(COUNTROWS(Predicoes), KEEPFILTERS(Predicoes[resultado] = "TN")), 0)
+
+Recall = DIVIDE([TP], [TP] + [FN])
+
+Precisão = DIVIDE([TP], [TP] + [FP])
+
+Taxa de alertas = DIVIDE([Alertas], [Observações avaliadas])
+
+// Unidade relativa hipotética, sem interpretação monetária.
+Custo relativo hipotético = [FP] + 10 * [FN]
